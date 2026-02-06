@@ -7,30 +7,18 @@ yesButton?.addEventListener("click", () => {
 	window.location.href = "yes.html";
 });
 
-function moveNoButton() {
-	// Erst wenn wir bewegen, auf fixed umschalten
-	if (noContainer.style.position !== "fixed") {
-		noContainer.style.position = "fixed";
-	}
-	
-	const yesBtnRect = yesButton.getBoundingClientRect();
-	const yesCenterX = yesBtnRect.left + yesBtnRect.width / 2;
-	const yesCenterY = yesBtnRect.top + yesBtnRect.height / 2;
-	const radius = 150;
-	
-	const angle = Math.random() * Math.PI * 2;
-	const distance = Math.random() * radius + 80;
-	
-	const randomX = Math.max(10, Math.min(window.innerWidth * 0.9 - 60, yesCenterX + Math.cos(angle) * distance - 60));
-	const randomY = Math.max(10, Math.min(window.innerHeight * 0.9 - 30, yesCenterY + Math.sin(angle) * distance - 30));
-	
-	noContainer.style.left = randomX + "px";
-	noContainer.style.top = randomY + "px";
-	noContainer.style.transition = "all 0.3s ease";
-}
-
 noButton?.addEventListener("mouseover", () => {
-	moveNoButton();
+    const min = 200;
+    const max = 200;
+
+    const distance = Math.random() * (max - min) + min;
+    const angle = Math.random() * Math.PI * 2;
+
+    const moveX = Math.cos(angle) * distance;
+    const moveY = Math.sin(angle) * distance;
+
+    noButton.style.transition = "transform 0.3s ease";
+    noButton.style.transform = `translate(${moveX}px, ${moveY}px)`;
 });
 
 noButton?.addEventListener("click", (e) => {

@@ -130,82 +130,82 @@ body {
 
 .confetti:nth-child(1) {
     left: 5%;
-    animation: confetti-fall 3s ease-in forwards;
+    animation: confetti-fall 3s ease-in infinite;
 }
 
 .confetti:nth-child(2) {
     left: 10%;
-    animation: confetti-fall 3.5s ease-in forwards 0.2s;
+    animation: confetti-fall 3.5s ease-in infinite 0.2s;
 }
 
 .confetti:nth-child(3) {
     left: 15%;
-    animation: confetti-fall 3s ease-in forwards 0.1s;
+    animation: confetti-fall 3s ease-in infinite 0.1s;
 }
 
 .confetti:nth-child(4) {
     left: 20%;
-    animation: confetti-fall 3.8s ease-in forwards 0.3s;
+    animation: confetti-fall 3.8s ease-in infinite 0.3s;
 }
 
 .confetti:nth-child(5) {
     left: 25%;
-    animation: confetti-fall 3.2s ease-in forwards 0.15s;
+    animation: confetti-fall 3.2s ease-in infinite 0.15s;
 }
 
 .confetti:nth-child(6) {
     left: 30%;
-    animation: confetti-fall 3.6s ease-in forwards 0.25s;
+    animation: confetti-fall 3.6s ease-in infinite 0.25s;
 }
 
 .confetti:nth-child(7) {
     left: 35%;
-    animation: confetti-fall 3.1s ease-in forwards 0.1s;
+    animation: confetti-fall 3.1s ease-in infinite 0.1s;
 }
 
 .confetti:nth-child(8) {
     left: 40%;
-    animation: confetti-fall 3.7s ease-in forwards 0.3s;
+    animation: confetti-fall 3.7s ease-in infinite 0.3s;
 }
 
 .confetti:nth-child(9) {
     left: 45%;
-    animation: confetti-fall 3.3s ease-in forwards 0.2s;
+    animation: confetti-fall 3.3s ease-in infinite 0.2s;
 }
 
 .confetti:nth-child(10) {
     left: 50%;
-    animation: confetti-fall 3.5s ease-in forwards 0.1s;
+    animation: confetti-fall 3.5s ease-in infinite 0.1s;
 }
 
 .confetti:nth-child(11) {
     left: 55%;
-    animation: confetti-fall 3.2s ease-in forwards 0.25s;
+    animation: confetti-fall 3.2s ease-in infinite 0.25s;
 }
 
 .confetti:nth-child(12) {
     left: 60%;
-    animation: confetti-fall 3.8s ease-in forwards 0.2s;
+    animation: confetti-fall 3.8s ease-in infinite 0.2s;
 }
 
 .confetti:nth-child(13) {
     left: 65%;
-    animation: confetti-fall 3.4s ease-in forwards 0.15s;
+    animation: confetti-fall 3.4s ease-in infinite 0.15s;
 }
 
 .confetti:nth-child(14) {
     left: 70%;
-    animation: confetti-fall 3.6s ease-in forwards 0.3s;
+    animation: confetti-fall 3.6s ease-in infinite 0.3s;
 }
 
 .confetti:nth-child(15) {
     left: 75%;
-    animation: confetti-fall 3.1s ease-in forwards 0.1s;
+    animation: confetti-fall 3.1s ease-in infinite 0.1s;
 }
 
 .confetti:nth-child(16) {
     left: 80%;
-    animation: confetti-fall 3.7s ease-in forwards 0.25s;
+    animation: confetti-fall 3.7s ease-in infinite 0.25s;
 }
 
 @keyframes confetti-fall {
