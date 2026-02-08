@@ -96,6 +96,177 @@ body {
 	animation: happy-pulse 1.4s ease-in-out infinite;
 }
 
+/* Cards Container for yes.html */
+.cards-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 24px;
+	align-items: center;
+	max-width: 1800px;
+	width: 100%;
+}
+
+.card-slot {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.left-slot {
+	justify-content: center;
+}
+
+.center-slot {
+	justify-content: center;
+}
+
+.right-slot {
+	justify-content: center;
+	position: relative;
+}
+
+.image-slot {
+	justify-content: flex-start;
+}
+
+.happy-card {
+	opacity: 1;
+	animation: happy-pulse 1.4s ease-in-out infinite, slide-left 1s ease-out 2s forwards;
+}
+
+.info-card {
+	opacity: 0;
+	animation: fade-in-and-slide 1s ease-out 3s forwards;
+	max-width: 520px;
+	position: absolute;
+}
+
+.image-card {
+	opacity: 0;
+	animation: fade-in-image 1s ease-out 6s forwards;
+	max-width: 1000px !important;
+	padding: 0;
+	overflow: hidden;
+	position: absolute;
+}
+
+.image-card {
+	opacity: 0;
+	animation: fade-in-image 1s ease-out 4s forwards;
+	max-width: 1000px !important;
+	padding: 0;
+	overflow: hidden;
+}
+
+.card-image {
+	width: 100%;
+	height: auto;
+	display: block;
+	border-radius: 24px;
+}
+
+@media (max-width: 1200px) {
+	.cards-container {
+		grid-template-columns: 1fr;
+		gap: 24px;
+	}
+	
+	.center-slot {
+		animation: none;
+	}
+	
+	.card-slot {
+		justify-content: center;
+	}
+}
+
+.info-title {
+	font-size: 32px;
+	font-weight: 700;
+	color: #ff4f8f;
+	margin-bottom: 24px;
+}
+
+.info-content {
+	text-align: left;
+	font-size: 18px;
+	line-height: 1.8;
+}
+
+.info-content p {
+	margin-bottom: 16px;
+	padding-left: 8px;
+}
+
+@keyframes move-to-left {
+	from {
+		grid-column: 2;
+	}
+	to {
+		grid-column: 1;
+	}
+}
+
+@keyframes slide-left {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(-560px);
+	}
+}
+
+@keyframes fade-in-card {
+	from {
+		opacity: 0;
+		transform: scale(0.9);
+	}
+	to {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+@keyframes fade-out-happy {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes fade-out {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+
+@keyframes fade-in-and-slide {
+	from {
+		opacity: 0;
+		transform: translateX(0) scale(0.9);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(-560px) scale(1);
+	}
+}
+
+@keyframes fade-in-image {
+	from {
+		opacity: 0;
+		transform: scale(0.9);
+	}
+	to {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
 @keyframes happy-pulse {
 	0% {
 		transform: scale(1);

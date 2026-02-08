@@ -9,9 +9,28 @@
 </head>
 <body>
     <main class="page">
-        <section class="card" aria-labelledby="happy-message">
-            <h1 id="happy-message" class="question big-happy">Ich bin glücklich!</h1>
-        </section>
+        <div class="cards-container">
+            <div class="card-slot left-slot"></div>
+            <div class="card-slot center-slot">
+                <section class="card happy-card" aria-labelledby="happy-message">
+                    <h1 id="happy-message" class="question big-happy">Ich bin glücklich!</h1>
+                </section>
+            </div>
+            <div class="card-slot right-slot">
+                <section class="card info-card" aria-labelledby="info-title">
+                    <h2 id="info-title" class="info-title">Der Plan</h2>
+                    <div class="info-content">
+                        <p>🍰 Ein leckeres Essen im Parforce-Haus in Bernburg.</p>
+                        <p>🕑 20:15 Uhr</p>
+                        <p>🐕 Deine Eltern würden auf Joker aufpassen.</p>
+                        <p>❤️ Ich liebe dich!</p>
+                    </div>
+                </section>
+                <section class="card image-card" aria-label="Parforce-Haus">
+                    <img src="Bilder/Parforce.jpg" alt="Parforce-Haus" class="card-image">
+                </section>
+            </div>
+        </div>
     </main>
     <div class="confetti-container">
         <span class="confetti">🎈</span>
