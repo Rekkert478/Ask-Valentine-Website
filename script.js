@@ -20,7 +20,7 @@ noButton?.addEventListener("mouseover", () => {
         yesButton.style.transform = `scale(${scale})`;
     }
 
-    if(noClickCount >= 4) {
+    if(noClickCount >= 6) {
         yesButton.classList.add("pulse");
     }
 
